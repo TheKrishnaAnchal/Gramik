@@ -1,56 +1,45 @@
-# Welcome to your Expo app 👋
+# Gramik 🌾 - AI Agricultural Intelligence
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Gramik is an offline-first, AI-powered agricultural intelligence application optimized for low-resource and low-connectivity environments. It integrates local data queuing, on-device machine learning inference, and asynchronous alert systems into a unified mobile interface.
 
-## Get started
+---
+System Architecture & Tech Stack
+Gramik utilizes an open-source stack with zero licensing costs, reducing server dependency via on-device inference:
 
-1. Install dependencies
+Frontend: React Native (Expo) designed for high-fidelity, low-latency rendering.
 
-   ```bash
-   npm install
-   ```
+Computer Vision: EfficientNet (CNN) deployed for localized crop disease detection and diagnostics.
 
-2. Start the app
+Weather Forecasting: Temporal Fusion Transformer (TFT) for short-term climate and storm modeling.
 
-   ```bash
-   npx expo start
-   ```
+Market Intelligence: LightGBM utilized for price forecasting and market trend analysis.
 
-In the output, you'll find options to open the app in a
+Database & Backend Sync: Encrypted SQLite local queues ensure zero data loss during network drops.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Geospatial Processing: PostGIS integration for mapping community disease heatmaps on a 50m grid.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+The 5 Core Modules
+Gramik's architecture is divided into five specific intelligence modules that communicate through a centralized Decision Engine:
 
-## Get a fresh project
+Crop Disease Detection: Instantly identifies plant health issues through a simple photo and generates a prescriptive recovery plan.
 
-When you're ready, run:
+Weather & Crop Advisory: Analyzes short-term climate risks to trigger precise, localized alerts for sowing, irrigating, or harvesting.
 
+Financial & Market Intel: Processes live market price trends to deliver actionable, data-backed advice on whether to sell or hold harvests.
+
+Waste Value Creation: Replaces harmful practices like waste burning by providing step-by-step guidance on composting or repurposing agricultural biomass.
+
+Multilingual AI Bot & Schemes Gateway: An NLP-based intent gateway that processes voice and text inputs across 12+ vernacular languages, sending proactive alerts regarding market spikes and government schemes.
+
+Developed by Team Terminal Titans @ Delhi Technological University Project for the KRITI Social Impact Challenge 2026
+
+## 🚀 Getting Started (Local Development)
+
+This project is built using [Expo](https://expo.dev/) and React Native.
+
+### 1. Install Dependencies
+Ensure you have Node.js installed, then run:
 ```bash
-npm run reset-project
-```
+npm install
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
